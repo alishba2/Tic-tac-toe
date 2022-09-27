@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./Style.css">
+
+    <!-- BootStrap -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div style="margin-left: 30px;">
+        <h1>Tic Tac Toe</h1>
+    </div>
+
+    <div class="PlayerNumber">
+        <input type="button" onclick="showDiv() , changePlayers()"  value="One Player" />
+<form id="hello" style="display:none;">
+  <label>Enter Name: </label><br>
+  <input type="text" id="name" required>
+  <button type="button" onclick="showValue()">submit</button>
+</form>
+
+
+
+<input type="button" onclick="showDiv2() , changePlayers2()"  value="Two Player" />
+<form id="hello2" style="display:none;">
+    
+  <label>Enter Names: </label><br>
+  <input type="text" id="name1" required>
+  <input type="text" id="name2" required>
+  <button type="button" onclick="showValue2()">submit</button>
+
+</form>
+
+
+
+      
+    </div>
+   
+<div class="gameContainer">
+    <div class="container">
+        <div class="box btop"><span class="boxText"></span></div>
+        <div class="box btop"><span class="boxText"></span></div>
+        <div class="box btop"><span class="boxText"></span></div>
+        <div class="box"><span class="boxText"></span></div>
+        <div class="box"><span class="boxText"></span></div>
+        <div class="box"><span class="boxText"></span></div>
+        <div class="box"><span class="boxText"></span></div>
+        <div class="box"><span class="boxText"></span></div>
+        <div class="box"><span class="boxText"></span></div>
+    </div>
+    <div id="ans">
+       
+    </div>
+ 
+    <div id="ans2">
+        
+    </div>
+    <div class="gameInfo">
+       
+       
+        <div>
+            <span class="info">X Turn</span>
+        
+        </div>
+        <div>
+            <button id="reset" class="button-8 restButton" role="button">
+                Reset
+            </button>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="./script.js"></script>
+</html>
